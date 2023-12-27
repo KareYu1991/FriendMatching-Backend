@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yu.usercenter.mapper.TeamMapper">
+  <resultMap id="BaseResultMap" type="com.yu.usercenter.model.domain.Team">
+    <!--@mbg.generated-->
+    <!--@Table team-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="maxNum" jdbcType="INTEGER" property="maxNum" />
+    <result column="expireTime" jdbcType="TIMESTAMP" property="expireTime" />
+    <result column="userId" jdbcType="BIGINT" property="userId" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="isDelete" jdbcType="TINYINT" property="isDelete" />
+  </resultMap>
+</mapper>

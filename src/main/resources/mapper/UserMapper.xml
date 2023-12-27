@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yu.usercenter.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.yu.usercenter.model.domain.User">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="userAccount" jdbcType="VARCHAR" property="userAccount"/>
+        <result column="avatarUrl" jdbcType="VARCHAR" property="avatarUrl"/>
+        <result column="gender" jdbcType="TINYINT" property="gender"/>
+        <result column="userPassword" jdbcType="VARCHAR" property="userPassword"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="userStatus" jdbcType="INTEGER" property="userStatus"/>
+        <result column="createTime" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="isDelete" jdbcType="TINYINT" property="isDelete"/>
+        <result column="userRole" jdbcType="INTEGER" property="userRole"/>
+        <result column="planetCode" jdbcType="VARCHAR" property="planetCode"/>
+        <result column="tags" jdbcType="VARCHAR" property="tags"/>
+        <result column="profile" jdbcType="VARCHAR" property="profile"/>
+    </resultMap>
+</mapper>

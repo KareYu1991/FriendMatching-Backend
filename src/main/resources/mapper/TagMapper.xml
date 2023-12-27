@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yu.usercenter.mapper.TagMapper">
+    <resultMap id="BaseResultMap" type="com.yu.usercenter.model.domain.Tag">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="tagName" jdbcType="VARCHAR" property="tagName"/>
+        <result column="userId" jdbcType="BIGINT" property="userId"/>
+        <result column="parentId" jdbcType="BIGINT" property="parentId"/>
+        <result column="isParent" jdbcType="TINYINT" property="isParent"/>
+        <result column="createTime" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="isDelete" jdbcType="TINYINT" property="isDelete"/>
+    </resultMap>
+</mapper>
